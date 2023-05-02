@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacientes</title>
+  <link rel="stylesheet" href="psiMB.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+    <div class="header1">
+        <a href="#default" class="logo"><img src="/logo/logo (2).png" alt=""></a>
+        <div class="header-right">
+          <p style="color: #017849;font-size: large;">Bem vindo,<b>@Daniel </b> </p><i class="fa fa-caret-down"></i>
+          
+      </div>
+</div>
+    
+<H2>Meus pacientes</H2>
+  <div class="container">
+    <div class="header">
+      <button class="addpacient" onclick="openModal()" id="new"><i class="fa fa-plus-circle" aria-hidden="true"></i> Novo Cadastro</button>
+        <div class="filtrar" id="filtraçao"><input type="text" class="Pesquisar" placeholder="Pesquisar"><button type="submit" class="filtro"><i class="fa fa-search"></i> Filtrar </button>
+        </div>
+
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th style="color: #2F80ED;font-weight: normal;width: 200px;">Codigo</th>
+            <th style="color: #2F80ED;font-weight: normal;width: 250px;">Nome</th>
+            <th style="color: #2F80ED; font-weight: normal;">CPF</th>
+            <th class="acao"></th>
+            <th class="acao" style="font-weight: normal; color: #2F80ED;">Ações</th>
+            <th class="acao"></th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modalCP">
+        <header style="color: #017849;">Novo Paciente</header>
+        <form>
+            <div class="form first">
+                <div class="details personal">
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="number" id="m-cpf" placeholder="CPF" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nome</label>
+                            <input type="text" id="m-nome" placeholder="Nome" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data de Nascimento</label>
+                            <input type="date" id="m-data" placeholder="dd/mm/aaaa" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" id="m-email" placeholder="Email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Genero</label>
+                            <select id="m-genero" required>
+                                <option disabled selected>Genero</option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nacionalidade</label>
+                            <input type="text" id="m-nac" placeholder="Nacionalidade" required>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Naturalidade</label>
+                            <input type="text" id="m-nat" placeholder="Naturalidade" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Profissão</label>
+                            <input type="text" id="m-pro" placeholder="Profissão" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Escolaridade</label>
+                            <input type="text" id="m-escola" placeholder="Escolaridade" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Estado civil</label>
+                            <select id="m-relacionamento" required>
+                              <option disabled selected>Estado civil</option>
+                              <option>Solteiro(a)</option>
+                              <option>Casado(a)</option>
+                              <option>Viuvo(a)</option>
+                          </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mãe</label>
+                            <input type="text" id="m-mae" placeholder="Nome da Mãe" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pai</label>
+                            <input type="text" id="m-pai" placeholder="Nome do Pai" required>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    
+                    
+                    <button id="btnSalvar" class="nextBtn">
+                        <span class="btnText">Criar</span>
+                    </button>
+                    
+            </div>
+                    </div>
+                </div>   
+   
+    
+        </form>
+     
+    <div class="modal-container-edit">
+        <div class="modalCP">
+          <header id="viewPaient" style="color: #017849;">Editar Paciente</header>
+          <form>
+              <div class="form first">
+                  <div class="details personal">
+  
+                      <div class="fields">
+  
+                          <div class="input-field">
+                              <label>CPF</label>
+                              <input type="number" id="m-cpfE" placeholder="CPF" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Nome</label>
+                              <input type="text" id="m-nomeE" placeholder="Nome" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Data de Nascimento</label>
+                              <input type="date" id="m-dataE" placeholder="dd/mm/aaaa" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Email</label>
+                              <input type="text" id="m-emailE" placeholder="Email" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Genero</label>
+                              <select id="m-generoE" required>
+                                  <option disabled selected>Genero</option>
+                                  <option>Masculino</option>
+                                  <option>Feminino</option>
+                                  <option>Outro</option>
+                              </select>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Nacionalidade</label>
+                              <input type="text" id="m-nacE" placeholder="Nacionalidade" required>
+                          </div>
+                      </div>
+                  </div>
+  
+                      <div class="fields">
+                          <div class="input-field">
+                              <label>Naturalidade</label>
+                              <input type="text" id="m-natE" placeholder="Naturalidade" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Profissão</label>
+                              <input type="text" id="m-proE" placeholder="Profissão" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Escolaridade</label>
+                              <input type="text" id="m-escolaE" placeholder="Escolaridade" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Estado civil</label>
+                              <select id="m-relacionamentoE" required>
+                                <option disabled selected>Estado civil</option>
+                                <option>Solteiro(a)</option>
+                                <option>Casado(a)</option>
+                                <option>Viuvo(a)</option>
+                            </select>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Mãe</label>
+                              <input type="text" id="m-maeE" placeholder="Nome da Mãe" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Pai</label>
+                              <input type="text" id="m-paiE" placeholder="Nome do Pai" required>
+                          </div>
+                      </div>
+                      <br>
+                      <hr>
+                      
+                      
+                      <button id="btnEditar" class="nextBtn">
+                          <span class="btnText">Atualizar</span>
+                      </button>
+                      
+              </div>
+              
+                      </div>
+                      
+                  </div> 
+                  <div class="modal-container-view">
+                    <div class="modalCP">
+                      <header id="viewPaient" style="color: #017849;">Paciente</header>
+                      <form>
+                      <div>
+                          <div class="form first">
+                              <div class="details personal">
+              
+                                  <div class="fields">
+              
+                                      <div class="input-field">
+                                          <label>CPF</label>
+                                          <input type="number" id="m-cpfV" placeholder="CPF" required disabled style="background-color: rgb(209, 209, 209);">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Nome</label>
+                                          <input type="text" id="m-nomeV" placeholder="Nome" class="viewname" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Data de Nascimento</label>
+                                          <input type="date" id="m-dataV" placeholder="dd/mm/aaaa" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Email</label>
+                                          <input type="text" id="m-emailV" placeholder="Email" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Genero</label>
+                                          <select id="m-generoV" required disabled style="background-color: rgb(209, 209, 209);;">
+                                              <option disabled selected>Genero</option>
+                                              <option>Masculino</option>
+                                              <option>Feminino</option>
+                                              <option>Outro</option>
+                                          </select>
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Nacionalidade</label>
+                                          <input type="text" id="m-nacV" placeholder="Nacionalidade" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+                                  </div>
+                              </div>
+              
+                                  <div class="fields">
+                                      <div class="input-field">
+                                          <label>Naturalidade</label>
+                                          <input type="text" id="m-natV" placeholder="Naturalidade" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Profissão</label>
+                                          <input type="text" id="m-proV" placeholder="Profissão" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Escolaridade</label>
+                                          <input type="text" id="m-escolaV" placeholder="Escolaridade" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Estado civil</label>
+                                          <select id="m-relacionamentoV" required disabled style="background-color: rgb(209, 209, 209);;">
+                                            <option disabled selected>Estado civil</option>
+                                            <option>Solteiro(a)</option>
+                                            <option>Casado(a)</option>
+                                            <option>Viuvo(a)</option>
+                                        </select>
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Mãe</label>
+                                          <input type="text" id="m-maeV" placeholder="Nome da Mãe" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>
+              
+                                      <div class="input-field">
+                                          <label>Pai</label>
+                                          <input type="text" id="m-paiV" placeholder="Nome do Pai" required disabled style="background-color: rgb(209, 209, 209);;">
+                                      </div>    
+                                    </form>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+
+  <script src="psiMB.js"></script>
+</body>
+
+</html>

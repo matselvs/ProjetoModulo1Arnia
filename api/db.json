@@ -1,0 +1,96 @@
+{
+  "pacientes": [
+    {
+      "nome": "Matheus",
+      "cpf": "06054321",
+      "data": "2023-03-14",
+      "email": "matheus@gmail.com",
+      "genero": "Masculino",
+      "nac": "Brasil",
+      "nat": "Piaui",
+      "pro": "Programador",
+      "escola": "Medio",
+      "relacionamento": "Casado(a)",
+      "mae": "Luiza",
+      "pai": "José",
+      "id": 2
+    },
+    {
+      "nome": "Diego",
+      "cpf": "12345678",
+      "data": "2023-04-12",
+      "email": "diego@gmail.com",
+      "genero": "Masculino",
+      "nac": "Brasil",
+      "nat": "Piaui",
+      "pro": "Estudante",
+      "escola": "Medio",
+      "relacionamento": "Solteiro(a)",
+      "mae": "Neide",
+      "pai": "Espedito",
+      "id": 3
+    },
+    {
+      "nome": "Marcos",
+      "cpf": "415783635",
+      "data": "2023-04-05",
+      "email": "marcos@gmail.com",
+      "genero": "Masculino",
+      "nac": "Brasil",
+      "nat": "Piaui",
+      "pro": "Estudante",
+      "escola": "Medio",
+      "relacionamento": "Solteiro(a)",
+      "mae": "maria",
+      "pai": "José",
+      "id": 4
+    },
+    {
+      "nome": "Felipe",
+      "cpf": "34272876251910",
+      "data": "2023-05-02",
+      "email": "felipe@gmail.com",
+      "genero": "Masculino",
+      "nac": "Brasil",
+      "nat": "Piaui",
+      "pro": "Programador",
+      "escola": "",
+      "relacionamento": "Solteiro(a)",
+      "mae": "felipa",
+      "pai": "philips",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "Matheus",
+      "email": "matheus@gmail.com",
+      "password": "Matheus!",
+      "id": 1
+    },
+    {
+      "name": "Luis",
+      "email": "luis@gmail.com",
+      "password": "Luis12!",
+      "id": 2
+    },
+    {
+      "name": "vic",
+      "email": "vic@gmail.com",
+      "password": "Vinicios!",
+      "id": 3
+    },
+    {
+      "name": "Gago",
+      "email": "gago@gmail.com",
+      "password": "gaguinho!",
+      "id": 4
+    },
+    {
+      "name": "felipe",
+      "email": "felipe@gmail.com",
+      "password": "Felipe!",
+      "id": 5
+    }
+  ]
+}

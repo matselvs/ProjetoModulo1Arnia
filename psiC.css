@@ -1,0 +1,142 @@
+body{
+    
+	font-family: 'Montserrat', sans-serif;
+	background-color:#ebebeb ;
+	background-image: url(/logo/Vector.png),url(/logo/Vector\ \(1\).png);
+	background-position: left bottom , left 100px top 20px;
+    background-repeat: no-repeat, no-repeat;
+	background-size: 400px 500px,140px 140px;
+	width: 1210px;
+	height: 630px;
+
+}
+h1{
+	font-size: 60px;
+	letter-spacing: 10px;
+	color: #FFFFFF;
+}
+
+h3{
+	font-size: 25px;
+	letter-spacing: 15px;
+	color: #FFFFFF;
+}
+
+.form1 {
+	
+	width: 404px;
+	height: 450px;
+	position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+	background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+	margin-left: 35%;
+	margin-top: 60px;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form2 {
+	
+	width: 404px;
+	height: 480px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+	background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+	margin-left: 35%;
+	margin-top: 60px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .senhaForm {
+	display: none;
+  }
+  
+  a{
+	text-decoration: none;
+	color: #ebebeb;
+  }
+
+  input[type=text], input[type=Email],input[type=password] {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin-left: 15%;
+	outline: none;
+  }
+  
+
+  button {
+	background-color:#00995D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+	margin-left: 40%;
+    word-spacing: 10px;
+ 
+  }
+
+  
+  button:hover {
+	opacity: 0.8;
+  }
+  
+  
+
+  .imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	padding-top: 40px;
+  }
+  
+ 
+  .container {
+	padding: 16px;
+  }
+  
+  .container2 {
+	padding: 16px;
+  }
+  
+
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+	span.psw {
+	  display: block;
+	  float: none;
+	}
+  }
+  .cadastrolink{
+	margin-left: 29%;
+  }
+  label{
+	
+	margin-left: 15%;
+	font-size: small;
+  }
+
+  p{
+    color: #00995D;
+  }

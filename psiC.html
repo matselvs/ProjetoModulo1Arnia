@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="psiC.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+  <div class="nomeForm" id="nomeFormulario"></div>
+<form class="form1" id="form1" >
+  <div class="imgcontainer">
+    <img src="/logo/logo (1).png" alt="Avatar" class="avatar">
+    <p><b>Seja bem vindo(a)!</b></p>
+    <p>Preencha os campos para se cadastrar</p>
+  </div>
+
+  <div class="container">
+    <label for="uname">Nome</label>
+    <input type="text" placeholder="Digite seu Nome" name="uname" id="name" required>
+
+    <label for="Email">Email</label>
+    <input type="email" placeholder="Digite seu E-mail" name="Email" id="email" required>
+
+    <button type="submit" id="btnProximo"><b>Prosseguir </b><i class="fa fa-arrow-right"></i></button>
+  </div>
+</form>
+
+  <div class="senhaForm" id="senhaFormulario">
+    <form class="form2" id="form2">
+      <div class="imgcontainer">
+        <img src="/logo/logo (1).png" alt="Avatar" class="avatar">
+        <p><b>Seja bem vindo(a)!</b></p>
+        <p>Escolha uma Senha</p>
+      </div>
+
+      <div class="container2">
+        <label for="usenha">Senha</label>
+        <input type="password" placeholder="Digite sua Senha" name="usenha" id="password" required>
+
+        <label for="Csenha">Confirme sua Senha</label>
+        <input type="password" placeholder="Repita sua Senha" name="Csenha" id="confirm-password" required>
+        <ul style="line-height: 2px;list-style-type: none;margin-left: 7%;">
+          <li><p style="font-size: 12px;color: gray;"><span style="color:#FF0000">*</span> Precisa no minimo 8 digitos</p></li>
+          <li><p style="font-size: 12px;color: gray;"><span style="color:#FF0000">*</span> Precisa conter um caracter especial */+</p></li>
+          <li><p style="font-size: 12px;color: gray;"><span style="color:#FF0000">*</span> Precisa conter uma letra MAIUSCULA</p></li>
+        </ul>
+        <button type="submit" class="botaocadastro" id="cadastrarBtn" onclick=""><a href="index.html"><b>Cadastrar </b><i class="fa fa-check"></i></a></button>
+      </div>
+    </form>
+  </div>
+</form>
+
+        <script src="psiC.js"></script>
+</body>
+</html>

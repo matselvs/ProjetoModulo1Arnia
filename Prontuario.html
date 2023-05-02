@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prontuário</title>
+  <link rel="stylesheet" href="Prontuario.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+    <div class="header1">
+        <a href="#default" class="logo"><img src="/logo/logo (2).png" alt=""></a>
+        <a href="psiMB.html" class="goback">Voltar para Listagem</a>
+        <div class="header-right">
+          <p style="color: #017849;font-size: large;">Bem vindo(a),<b> Daniel </b> </p> <i class="fa fa-caret-down"></i> 
+      </div>
+</div>
+ 
+<H2>Prontuário</H2>
+<div class="filtrar" id="filtraçao">
+
+    <input type="text" class="Pesquisar" placeholder="Pesquisar"><button type="submit" class="filtro"><i class="fa fa-search"></i> Filtrar </button>
+    
+        </div>
+
+ <div class="rectangle">
+    <h4>Identificação do Paciente</h4>
+    <br>
+     <p style="color: #017849;">Paciente</p>
+     <p>Ana Ester Resende</p>
+     <br>
+     <p style="color: #017849;">Nascimento</p>
+     <p>10/09/2009</p>
+     <br>
+     <p style="color: #017849;">Profissão</p>
+     <p>Desingner</p>
+     <br>
+     <p style="color: #017849;">Escolaridade</p>
+     <p>Ensino medio</p>
+
+ </div>
+
+ <div class="rectangle2">
+
+  <!-- Trigger/Open The Modal -->
+  <button class="modal-button" href="#myModal1" ><img src="/logo/head.png" alt="" style="margin:5px 0px 0px 5px">  Sessão</button>
+  
+  <!-- The Modal -->
+  <div id="myModal1" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h3 style="color: #00995D;">Nova sessão</h3>
+      </div>
+      <div class="modal-body">
+        <h4><img src="/logo/Eo_circle_green_number-1.svg.png" height="20px" width="20px" alt=""> Dados gerais</h4>
+        
+        <p class="p1">Data*</p> <p class="p2">Hora de inicio*</p> <p class="p3">Hora fim*</p>
+        <br>
+        <input type="date" placeholder="DD/MM/AAAA"> <input type="time" placeholder="hora"> <input type="time" placeholder="hora">
+        <br>
+        <br>
+        <hr style="color: #EEEEEE ;">
+      </div>
+      <br>
+      <div class="modal-body1">
+        
+        <h4><img src="/logo/Eo_circle_green_number-2.svg.png" height="20px" width="20px" alt=""> Sessão</h4>
+        <br>       
+        <p>Titulo*</p>
+        <input class="sessiontype" style="padding-bottom: 10px;margin-bottom: 10px;" id="text1lab" type="text">
+        <br>
+        <br>
+        <p>Resumo da sessão*</p>
+        <textarea class="areatexct1" id="area1lab" name="Resumo da sessão*" cols="30" rows="10"></textarea>
+      </div>
+      <hr>
+      <div class="modal-footer1">
+        <p class="campos" style="padding-right: 340px;">Campos Obrigatorios*</p> <button class="close" style="margin-right: 20px;">Cancelar</button> <button style="background:#017849;color: #fff;">Concluir</button>
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- Trigger/Open The Modal -->
+  <button class="modal-button" href="#myModal2"><img src="/logo/pin.png" alt="" style="margin: 5px 0px 0px 5px">  Fato Importante</button>
+  
+  <!-- The Modal -->
+  <div id="myModal2" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h3 style="color: #00995D;">Novo Fato Relevante</h3>
+      </div>
+      <div class="modal-body2">
+           <p class="labels">Data* Titulo*</p>            
+          <input type="date">     <input style="margin-left: 30px;width: 380px;" type="text" placeholder="Digite">
+          <br>
+          <br>
+        <p>Descrição*</p>
+        <textarea class="areatexct1" id="area1lab" name="Resumo da sessão*" cols="30" rows="10"></textarea>
+      </div>
+      <hr>
+      <div class="modal-footer1">
+        <p class="campos" style="padding-right: 340px;">Campos Obrigatorios*</p> <button class="close" style="margin-right: 20px;">Cancelar</button> <button style="background:#017849;color: #fff;">Concluir</button>
+      </div>
+    </div>
+  
+  </div>
+    
+ </div>
+
+ <div class="rectangle3">
+
+   <h4>Sessão 02</h4>
+   <p>22 de setembro de 2023</p>
+   <br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+<button class="morebutton" onclick="myFunction()" id="myBtn">Ver mais</button>
+<div class="rectangle4"></div>
+<div class="ball"></div>
+    </div>
+     
+ </div>
+
+ <div class="rectangle5"></div>
+ <div class="rectangle6"><p> Filtrar por: <i class="fa fa-caret-down"></i></p></div>
+
+<a href="#" class="gotop"><img src="/logo/topup.png" alt=""></a>
+
+
+
+
+
+
+<script src="Prontuario.js"></script> 
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color:#ebebeb ;
+	background-image: url(/logo/Vector.png),url(/logo/Vector\ \(1\).png);
+	background-position: left bottom , left 100px top 20px;
+    background-repeat: no-repeat, no-repeat;
+	background-size: 400px 500px,140px 140px;
+	width: 1210px;
+	height: 630px;
+
+}
+h1{
+	font-size: 60px;
+	letter-spacing: 10px;
+	color: #FFFFFF;
+}
+
+h3{
+	font-size: 25px;
+	letter-spacing: 15px;
+	color: #FFFFFF;
+}
+
+form {
+	
+	width: 450px;
+	height: 520px;
+	position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+	background: #017849;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+	margin-left: 30%;
+	margin-top: 60px;
+	
+  }
+  
+  a{
+	text-decoration: none;
+	color: #ebebeb;
+  }
+
+  input[type=email], input[type=password] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin-left: 25%;
+	outline: none;
+  }
+  
+
+  button {
+	background-color: #017849;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+	margin-left: 25%;
+  }
+  
+  
+  button:hover {
+	opacity: 0.8;
+  }
+  
+  
+
+  .imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	padding-top: 40px;
+  }
+  
+ 
+  .container {
+	padding: 16px;
+  }
+  
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+	span.psw {
+	  display: block;
+	  float: none;
+	}
+  }
+  .cadastrolink{
+	margin-left: 25.9%;
+  }
+  label{
+	color: #f1f1f1;
+	margin-left: 25%;
+	font-size: small;
+  }
