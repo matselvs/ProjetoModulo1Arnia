@@ -21,7 +21,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 // Verifica se o email e a senha correspondem a um usuário válido
 function isValidUser(email, password) {
     // Cria a URL da API para buscar os dados de usuário do servidor JSON
-    var apiUrl = "http://localhost:3000/users?email=" + email + "&password=" + password;
+    var apiUrl = "https://renderapiprojetomodulo1.onrender.com/users?email=" + email + "&password=" + password;
 
     // Faz uma solicitação de API para buscar os dados de usuário do servidor JSON
     return fetch(apiUrl)
