@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById('email');
     const password = document.getElementById('password');
 
-    fetch('http://localhost:3000/users?email=' + email.value)
+    fetch('https://renderapiprojetomodulo1.onrender.com/users?email=' + email.value)
       .then(response => response.json())
       .then(users => {
         if (users.length > 0) {
           alert('Usuário já existe');
           return;
         }
-        fetch('http://localhost:3000/users', {
+        fetch('https://renderapiprojetomodulo1.onrender.com/users', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name: name.value, email: email.value, password: password.value })
