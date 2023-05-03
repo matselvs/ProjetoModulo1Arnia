@@ -344,7 +344,7 @@ filterBtn.addEventListener('click', async () => {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //json//
 async function createPatient (pacientes){
-  await fetch ('http://localhost:3000/pacientes',{
+  await fetch ('https://renderapiprojetomodulo1.onrender.com/pacientes',{
     method: 'POST',
     headers: {
       "Content-Type": "application/json",
@@ -354,7 +354,7 @@ async function createPatient (pacientes){
 
 }
 async function editPatient (id, paciente){
-  await fetch ('http://localhost:3000/pacientes/'+ id,{
+  await fetch ('https://renderapiprojetomodulo1.onrender.com/pacientes/'+ id,{
     method: 'PUT',
     headers: {
       "Content-Type": "application/json",
@@ -364,17 +364,17 @@ async function editPatient (id, paciente){
 
 }
 async function getPacients(search= ''){
-  const response = await fetch ('http://localhost:3000/pacientes?nome_like=' + search)
+  const response = await fetch ('https://renderapiprojetomodulo1.onrender.com/pacientes?nome_like=' + search)
   const pacientes = await response.json()
   return pacientes
 }
 async function getPacient(id){
-  const response = await fetch ('http://localhost:3000/pacientes/' + id)
+  const response = await fetch ('https://renderapiprojetomodulo1.onrender.com/pacientes/' + id)
   const paciente = await response.json()
   return paciente
 }
 async function deletePatient (id){
-  await fetch ('http://localhost:3000/pacientes/' + id,{
+  await fetch ('https://renderapiprojetomodulo1.onrender.com/pacientes/' + id,{
     method: 'DELETE',
    
   })
@@ -403,7 +403,7 @@ function abrirpopup(  ){
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // faz uma solicitação HTTP GET para o servidor JSON para obter os detalhes do usuário atualmente conectado
-fetch('http://localhost:3000/users/1')
+fetch('https://renderapiprojetomodulo1.onrender.com/users/1')
   .then(response => response.json())
   .then(data => {
     // substitui o "@Daniel" pelo nome de usuário retornado pelo servidor JSON
